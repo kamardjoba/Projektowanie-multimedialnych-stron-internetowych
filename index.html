@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nazar Lymar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .cv-container {
+            background: white;
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .left-column {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            border-right: 3px solid #0073e6;
+            background-color: #f0f8ff;
+        }
+        .right-column {
+            width: 70%;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0073e6;
+        }
+        h1, h2 {
+            color: #0073e6;
+        }
+        h3 {
+            color: #005bb5;
+        }
+        p, li {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #0073e6;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+            }
+            .left-column {
+                width: 100%;
+                border-right: none;
+                border-bottom: 3px solid #0073e6;
+            }
+            .right-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="left-column">
+            <img src="photo.webp" alt="Zdjęcie Nazara Lymara">
+            <h2>Nazar Lymar</h2>
+            <p>Programista | Project Manager</p>
+            <h3>Kontakt</h3>
+            <ul>
+                <li>Email: nazar@example.com</li>
+                <li>Telefon: +48 123 456 789</li>
+                <li>LinkedIn: linkedin.com/in/nazar</li>
+                <li>GitHub: github.com/nazar</li>
+            </ul>
+        </div>
+        <div class="right-column">
+            <div class="section">
+                <h2>O mnie</h2>
+                <p>Programista z pasją do nowych technologii i zarządzania projektami. Ukończyłem informatykę i posiadam doświadczenie w bazach danych, systemach backendowych oraz tworzeniu aplikacji i gier.</p>
+            </div>
+            <div class="section">
+                <h2>Doświadczenie</h2>
+                <h3>Freelance Developer</h3>
+                <p>2023 - obecnie</p>
+                <ul>
+                    <li>Tworzenie gier i aplikacji</li>
+                    <li>Projektowanie architektury backendowej</li>
+                    <li>Zarządzanie bazami danych</li>
+                </ul>
+                <h3>Project Manager</h3>
+                <p>2022 - 2023</p>
+                <ul>
+                    <li>Koordynacja zespołu</li>
+                    <li>Planowanie i realizacja projektów</li>
+                    <li>Zarządzanie subskrypcjami i integracjami</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Umiejętności</h2>
+                <ul>
+                    <li>Python, JavaScript, SQL</li>
+                    <li>React, Node.js, Django</li>
+                    <li>Zarządzanie bazami danych</li>
+                    <li>Agile, Scrum</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Wykształcenie</h2>
+                <p>Informatyka - Vistula University (2025)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
